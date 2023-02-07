@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 77047545}
   - component: {fileID: 77047544}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: creeper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 182764948}
   - component: {fileID: 182764947}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
