@@ -15,7 +15,6 @@ public class RopeGrip : MonoBehaviour
         {
             Debug.Log("LeftMousePressed");
             _hingeJoint2D.enabled = false;
-            
         }
     }
 }
