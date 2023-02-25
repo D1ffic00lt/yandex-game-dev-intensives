@@ -9,7 +9,8 @@ public class Slide : MonoBehaviour
     [SerializeField] private Vector2 _velocity;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private float _speed;
-
+    [SerializeField] private float _jump;
+    
     private Rigidbody2D _rb2d;
 
     private Vector2 _groundNormal;
@@ -36,6 +37,13 @@ public class Slide : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (_grounded)
+            {
+                _velocity += _groundNormal * _jump;
+            }
+        }
         Vector2 alongSurface = Vector2.Perpendicular(_groundNormal);
 
         _targetVelocity = alongSurface * _speed;
