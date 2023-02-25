@@ -52,6 +52,15 @@ public class Slide : MonoBehaviour
         Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
         Vector2 move = moveAlongGround * deltaPosition.x;
 
+        if (_groundNormal.x > 0)
+        {
+            move.x *= -1;
+        }
+        else if (_groundNormal.x < 0)
+        {
+            move.y *= -1;
+        }
+        
         Movement(move, false);
 
         move = Vector2.up * deltaPosition.y;
